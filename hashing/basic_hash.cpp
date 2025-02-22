@@ -18,7 +18,7 @@ int main(){
     }
 
     int q; 
-    cout<<"Enter the number of queries: ";
+    cout<<"Enter the number of querie: ";
     cin>>q;
     while(q--){
         int x;
