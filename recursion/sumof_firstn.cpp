@@ -17,3 +17,5 @@ int main(){
 
 // Time Complexity: O(n)
 // Space Complexity: O(n)
+// Input: 5
+// Output: 120
