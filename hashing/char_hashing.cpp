@@ -1,4 +1,5 @@
 #include<iostream>
+#include<map>
 using namespace std;
 
 int main(){
@@ -6,11 +7,16 @@ int main(){
     cout<<"Enter the string: ";
     cin>>s;
 
-    int hash[26]={0};
+    map<char,int> mapp;
     for(int i=0; i<s.size(); i++){
-        hash[s[i]-'a']++;
-
+        mapp[s[i]-'a']++;
     }
+
+    // int hash[26]={0};
+    // for(int i=0; i<s.size(); i++){
+    //     hash[s[i]-'a']++;
+
+    //}
     int q;
     cout<<"Enter the number of queries: ";
     cin>>q;
@@ -19,7 +25,8 @@ int main(){
         cout<<"Enter the character to be searched: ";
         cin>>x;
 
-        cout<<hash[x-'a']<<endl;
+        cout<<mapp[x-'a']<<endl;
     }
+    
     return 0;   
 }

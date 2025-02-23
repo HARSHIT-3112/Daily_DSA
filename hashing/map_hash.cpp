@@ -8,14 +8,14 @@ int main(){
     cin>>n;
 
     int arr[n];
-    for(int i=0; i<n; i++){
-        cin>>arr[i];
-    }
-
     map<int, int> mpp;
     for(int i=0; i<n; i++){
+        cin>>arr[i];
         mpp[arr[i]]++;
     }
+
+    
+    
 
     int q;
     cin>>q;
@@ -23,6 +23,11 @@ int main(){
         int x;
         cin>>x;
         cout<<mpp[x]<<endl;
+    }
+
+    for(auto it : mpp){
+        cout<<it.first<<"-->"<<it.second<<endl;
+
     }
     return 0;
 
