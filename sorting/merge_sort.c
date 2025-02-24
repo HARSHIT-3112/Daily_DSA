@@ -33,7 +33,7 @@ void merge(int arr[],int l, int mid, int h){
         arr[i]=temp[i];
 }
 }
-
+//
 void merge_sort(int arr[], int l, int h){
     int mid;
     if(l!=h){
