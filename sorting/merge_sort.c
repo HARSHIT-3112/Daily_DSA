@@ -45,7 +45,7 @@ void merge_sort(int arr[], int l, int h){
     
 }
 
-
+//
 int main(){
     int n;
     printf("Enter the number of elements: ");
