@@ -9,7 +9,7 @@ int main(){
 
     map<char,int> mapp;
     for(int i=0; i<s.size(); i++){
-        mapp[s[i]-'a']++;
+        mapp[s[i]]++;
     }
 
     // int hash[26]={0};
@@ -25,8 +25,10 @@ int main(){
         cout<<"Enter the character to be searched: ";
         cin>>x;
 
-        cout<<mapp[x-'a']<<endl;
+        cout<<mapp[x]<<endl;
     }
-    
+    for(auto it : mapp){
+        cout<<it.first<<"-->"<<it.second<<endl;
+    }
     return 0;   
 }
