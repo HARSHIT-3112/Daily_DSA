@@ -12,6 +12,7 @@ void bubble_sort(int arr[],int n){
                 int temp=arr[j];
                 arr[j]=arr[j+1];
                 arr[j+1]=temp;
+                swap=1;
             }
             if(swap==0){
                 break;
