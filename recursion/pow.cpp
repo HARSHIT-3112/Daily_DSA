@@ -18,7 +18,7 @@ public:
                 result *= x;
             // Square x for the next bit of N
             x *= x;
-            // Shift N to process the next bit
+          
             N /= 2;
         }
         return result;
